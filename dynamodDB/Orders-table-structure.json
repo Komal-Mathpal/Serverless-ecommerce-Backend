@@ -1,0 +1,12 @@
+{
+  "TableName": "Orders",
+  "PrimaryKey": "order_id",
+  "Attributes": {
+    "order_id": "String",
+    "user_email": "String",
+    "product_id": "String",
+    "quantity": "Number",
+    "timestamp": "String"
+  },
+  "Description": "Stores customer orders placed via CreateOrder Lambda."
+}

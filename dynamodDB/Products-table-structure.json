@@ -1,0 +1,24 @@
+{
+  "TableName": "Products",
+  "PrimaryKey": "product_id",
+  "Attributes": {
+    "product_id": "String",
+    "name": "String",
+    "price": "Number",
+    "description": "String"
+  },
+  "SampleItems": [
+    {
+      "product_id": "p1",
+      "name": "Handmade Crochet Earrings",
+      "price": 199,
+      "description": "Beautiful handmade crochet earrings perfect for gifting."
+    },
+    {
+      "product_id": "p2",
+      "name": "Macrame Wall Hanging",
+      "price": 499,
+      "description": "Handcrafted macrame wall decor piece."
+    }
+  ]
+}
