@@ -1,27 +1,23 @@
 # Serverless E-Commerce Backend 
-# (AWS Lambda + API Gateway + DynamoDB + SES)
 
 This is a fully serverless backend project built on AWS.
 It powers a simple e-commerce workflow — listing products, fetching a product by ID, and placing an order with email confirmation.
 
 I created this project using the AWS Console (no frameworks), and later organized it into a clean folder structure for GitHub.
 
- Features
- 1. Get All Products
-
+ ## Features
+ ### 1. Get All Products
 Returns the list of all available products stored in DynamoDB (Products table).
 
- 2. Get Product by ID
-
+ ### 2. Get Product by ID
 Fetches a single product using the product_id passed in the API URL.
 
- 3. Create Order
-
+ ### 3. Create Order
 Creates a new order entry in DynamoDB (Orders table)
 
-Sends an order confirmation email using AWS SES (sandbox-verified emails).
+### Sends an order confirmation email using AWS SES (sandbox-verified emails).
 
- Tech Stack
+## Tech Stack
 Service	Purpose
 AWS Lambda	Backend logic (Python)
 API Gateway	REST API endpoints
@@ -29,7 +25,7 @@ DynamoDB	NoSQL data storage (Products & Orders)
 SES	Sending order confirmation emails
 IAM	Secure permissions for Lambda functions
 
-📁 Project Structure (Manually Organized for GitHub)
+## 📁 Project Structure (Manually Organized for GitHub)
 project/
 │
 ├── lambda/
@@ -47,42 +43,33 @@ project/
 │
 └── README.md
 
- DynamoDB Tables
-    Products Table
-
+ ## DynamoDB Tables
+ ### Products Table
     Partition Key: product_id
-
     Contains 2 sample handmade product items
     (Crochet Earrings & Macrame Wall Hanging)
 
-Orders Table
-
+### Orders Table
     Partition Key: order_id
-
     Stores user order information
 
     Each order also triggers a confirmation email
 
-Lambda Functions (Python)
-1️ getProducts.py
-
+## Lambda Functions (Python)
+### 1️ getProducts.py
 Returns all products from the table.
 
-2️ ProductById.py
-
+### 2️ ProductById.py
 Uses product_id from URL path to return a single item.
 
-3️ createOrder.py
-
+### 3️ createOrder.py
 Accepts POST body JSON
-
 Creates a new order in DynamoDB
 
 Sends email using SES
-
 Returns order_id in response
 
- API Gateway Routes
+## API Gateway Routes
 
 Your routes may look like this:
 
