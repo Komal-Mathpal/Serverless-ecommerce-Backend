@@ -1,13 +1,17 @@
-# Serverless E-Commerce Backend(AWS)
+# 🛒 Serverless E-Commerce Backend (AWS)
 
-This is a fully **serverless backend project** built on **AWS Console** to support  .
-## About
-It powers a simple e-commerce workflow — listing products, fetching a product by ID, and placing an order with email confirmation.
+A scalable **serverless backend** built using AWS to support modern e-commerce applications.  
+This backend uses **Lambda (Python), API Gateway, DynamoDB, and Cognito** to deliver a secure, cost-efficient, and highly scalable cloud architecture.
 
-I created this project using the AWS Console (no frameworks), and later organized it into a clean folder structure for GitHub.
+---
 
+## 📍 About the Project
+The project delivers essential e-commerce backend features including **user authentication, product management, cart operations, and orders** — all powered by fully serverless infrastructure.
 
+Because the architecture runs on AWS Lambda and API Gateway, it **automatically handles traffic spikes and load balancing without any manual server management**, ensuring smooth performance during high user activity.  
+This significantly enhances **traffic control, scalability, and application reliability**.
 
+---
  ## Features
  ### 1. Get All Products
 Returns the list of all available products stored in DynamoDB (Products table).
