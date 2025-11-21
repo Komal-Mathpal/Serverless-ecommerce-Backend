@@ -39,9 +39,9 @@ Creates a new order entry in DynamoDB (Orders table)
 
 ## 📁 Project Structure (Manually Organized for GitHub)
 ```
-- project/
- - lambda/
-    - getProducts.py
+│  project/
+│   ├── lambda/
+    ├── getProducts.py
 │   ├── getProductById.py
 
 │   └── createOrder.py
