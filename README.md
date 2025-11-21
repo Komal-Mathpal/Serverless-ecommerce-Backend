@@ -40,7 +40,7 @@ Creates a new order entry in DynamoDB (Orders table)
 ## 📁 Project Structure (Manually Organized for GitHub)
 ```
 │  project/
-│   ├── lambda/
+├── lambda/
     ├── getProducts.py
 │   ├── getProductById.py
 
