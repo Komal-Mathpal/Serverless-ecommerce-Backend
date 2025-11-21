@@ -90,8 +90,7 @@ Uses product_id from URL path to return a single item.
 Accepts POST body JSON
 Creates a new order in DynamoDB
 
-Sends email using SES
-Returns order_id in response
+
 ---
 
 ## API Gateway Routes
