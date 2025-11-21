@@ -38,6 +38,7 @@ Creates a new order entry in DynamoDB (Orders table)
 ---
 
 ## 📁 Project Structure (Manually Organized for GitHub)
+```
 - project/
  - lambda/
     - getProducts.py
@@ -55,6 +56,7 @@ Creates a new order entry in DynamoDB (Orders table)
 │   └── example-requests.md
 │
 └── README.md
+```
 /serverless-ecommerce-backend
  ┣ /src
  ┃ ┣ /functions          # Lambda handlers (API entry points)
