@@ -22,7 +22,7 @@ Fetches a single product using the product_id passed in the API URL.
  ### 3. Create Order
 Creates a new order entry in DynamoDB (Orders table)
 
-### Sends an order confirmation email using AWS SES (sandbox-verified emails).
+ **Sends an order confirmation email using AWS SES (sandbox-verified emails).**
 ---
 
 ## 🧰 Tech Stack / Tools Used
@@ -70,12 +70,14 @@ Creates a new order entry in DynamoDB (Orders table)
     Stores user order information
 
     Each order also triggers a confirmation email
+ ---
     
 ## 🔐 Authentication (Cognito)
 - User Pool for signup/login
 - Email verification for new users
 - Access + ID + Refresh tokens provided on login
 - Authorization using JWT tokens in API header
+---
 
 ## Lambda Functions (Python)
 ### 1️ getProducts.py
@@ -90,12 +92,13 @@ Creates a new order in DynamoDB
 
 Sends email using SES
 Returns order_id in response
+---
 
 ## API Gateway Routes
 
 Your routes may look like this:
 
-## 🔗 API Endpoints
+### 🔗 API Endpoints
 
 | Method | Endpoint | Lambda Function |
 |--------|----------|------------------|
@@ -105,25 +108,26 @@ Your routes may look like this:
 
 
 Full details are included inside:
- api/gateway-routes.md
+ **api/gateway-routes.md** 
+ ---
 
 ## Testing the APIs
 
 You can test the API using:
 
- ### Postman
+ **Postman**
 
 (full examples included in
  api/example-requests.md)
 
-### Browser
+**Browser**
 
 Works for:
 GET /products
 GET /products/{id}
 
 
-## Example:
+### Example:
 
 aws lambda invoke \
   --function-name CreateOrder \
@@ -131,6 +135,7 @@ aws lambda invoke \
   --cli-binary-format raw-in-base64-out \
   response.json \
   --region us-east-1
+  ---
 
 ## SES Email Setup
 
@@ -141,6 +146,7 @@ Sender Email
 Receiver Email (the user's email)
 
 Emails are sent upon successful order creation.
+---
 
 ## How to Run This Project Anywhere
 
@@ -168,7 +174,7 @@ No local server or environment required.
  Includes IAM, SES, DynamoDB, API Gateway
  Shows API testing, debugging & architecture understanding
 
- Improvements (Optional)
+ ## Improvements (Optional)
 
 Add authentication using Cognito
 
@@ -179,6 +185,8 @@ Add status tracking for orders
 Build a frontend (React, Next.js or simple HTML)
 
 Implement IaC (CloudFormation / SAM / Terraform)
+
+---
 
 ## Final Note
 
