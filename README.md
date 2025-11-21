@@ -23,6 +23,7 @@ Fetches a single product using the product_id passed in the API URL.
 Creates a new order entry in DynamoDB (Orders table)
 
  **Sends an order confirmation email using AWS SES (sandbox-verified emails).**
+ 
 ---
 
 ## 🧰 Tech Stack / Tools Used
