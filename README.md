@@ -19,14 +19,19 @@ Fetches a single product using the product_id passed in the API URL.
 Creates a new order entry in DynamoDB (Orders table)
 
 ### Sends an order confirmation email using AWS SES (sandbox-verified emails).
+---
 
-## Tech Stack
-Service	Purpose
-AWS Lambda	Backend logic (Python)
-API Gateway	REST API endpoints
-DynamoDB	NoSQL data storage (Products & Orders)
-SES	Sending order confirmation emails
-IAM	Secure permissions for Lambda functions
+## 🧰 Tech Stack / Tools Used
+
+| Service | Purpose |
+|---------|---------|
+| **AWS Lambda (Python)** | Core backend compute |
+| **Amazon API Gateway** | REST API endpoint management |
+| **Amazon DynamoDB** | NoSQL database |
+| **Amazon Cognito** | Authentication & user identity |
+| **Amazon CloudWatch** | Logs & monitoring |
+
+---
 
 ## 📁 Project Structure (Manually Organized for GitHub)
 - project/
