@@ -39,22 +39,22 @@ Creates a new order entry in DynamoDB (Orders table)
 
 ## 📁 Project Structure (Manually Organized for GitHub)
 ```
-│  project/
-├── lambda/
-    ├── getProducts.py
-│   ├── getProductById.py
-│   └── createOrder.py
-│
-│
-├── dynamodb/
-│   ├── products-table-structure.json
-│   └── orders-table-structure.json
-│
-├── api/
-│   ├── gateway-routes.md
-│   └── example-requests.md
-│
-└── README.md
+├── project/
+│  ├── lambda/
+│  │   ├── getProducts.py
+│  │   ├── getProductById.py
+│  │   └── createOrder.py
+│  │
+│  │
+│  ├── dynamodb/
+│  │   ├── products-table-structure.json
+│  │   └── orders-table-structure.json
+│  │
+│  ├── api/
+│  │   ├── gateway-routes.md
+│  │   └── example-requests.md
+│  │
+│  └── README.md
 ```
 ---
 
@@ -70,6 +70,12 @@ Creates a new order entry in DynamoDB (Orders table)
     Stores user order information
 
     Each order also triggers a confirmation email
+    
+## 🔐 Authentication (Cognito)
+- User Pool for signup/login
+- Email verification for new users
+- Access + ID + Refresh tokens provided on login
+- Authorization using JWT tokens in API header
 
 ## Lambda Functions (Python)
 ### 1️ getProducts.py
@@ -96,7 +102,6 @@ Your routes may look like this:
 | GET | /products | getProducts |
 | GET | /products/{id} | getProductById |
 | POST | /order | CreateOrder |
-```
 
 
 Full details are included inside:
@@ -106,20 +111,17 @@ Full details are included inside:
 
 You can test the API using:
 
- Postman
+ ### Postman
 
 (full examples included in
  api/example-requests.md)
 
-Browser
+### Browser
 
 Works for:
-
 GET /products
-
 GET /products/{id}
 
- AWS CLI
 
 ## Example:
 
@@ -130,7 +132,7 @@ aws lambda invoke \
   response.json \
   --region us-east-1
 
- SES Email Setup
+## SES Email Setup
 
 Since SES sandbox only allows verified emails, I verified:
 
@@ -140,7 +142,7 @@ Receiver Email (the user's email)
 
 Emails are sent upon successful order creation.
 
-How to Run This Project Anywhere
+## How to Run This Project Anywhere
 
 This backend is serverless — no installation needed on the user's computer.
 
@@ -158,7 +160,7 @@ Test using Postman or browser
 
 No local server or environment required.
 
-Why This Project Is Good for Cloud based post  Resume
+## Why This Project Is Good for Cloud based post  Resume
 
  Uses multiple AWS services together
  Demonstrates serverless design
@@ -178,7 +180,7 @@ Build a frontend (React, Next.js or simple HTML)
 
 Implement IaC (CloudFormation / SAM / Terraform)
 
- Final Note
+## Final Note
 
 This repository is structured to make the project understandable, readable, and recruiter-friendly — even though the entire backend was originally built using the AWS Console.
 
