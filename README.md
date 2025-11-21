@@ -1,4 +1,4 @@
- Serverless E-Commerce Backend (AWS Lambda + API Gateway + DynamoDB + SES)
+# Serverless E-Commerce Backend (AWS Lambda + API Gateway + DynamoDB + SES)
 
 This is a fully serverless backend project built on AWS.
 It powers a simple e-commerce workflow — listing products, fetching a product by ID, and placing an order with email confirmation.
