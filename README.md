@@ -108,6 +108,7 @@ Your routes may look like this:
 
 Full details are included inside:
  **api/gateway-routes.md** 
+ 
  ---
 
 ## Testing the APIs
@@ -134,18 +135,8 @@ aws lambda invoke \
   --cli-binary-format raw-in-base64-out \
   response.json \
   --region us-east-1
+  
   ---
-
-## SES Email Setup
-
-Since SES sandbox only allows verified emails, I verified:
-
-Sender Email
-
-Receiver Email (the user's email)
-
-Emails are sent upon successful order creation.
----
 
 ## How to Run This Project Anywhere
 
@@ -165,6 +156,8 @@ Test using Postman or browser
 
 No local server or environment required.
 
+---
+
 ## Why This Project Is Good for Cloud based post  Resume
 
  Uses multiple AWS services together
@@ -172,6 +165,8 @@ No local server or environment required.
  Real-world e-commerce use case
  Includes IAM, SES, DynamoDB, API Gateway
  Shows API testing, debugging & architecture understanding
+
+ ---
 
  ## Improvements (Optional)
 
