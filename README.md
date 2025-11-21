@@ -1,9 +1,12 @@
-# Serverless E-Commerce Backend 
+# Serverless E-Commerce Backend(AWS)
 
-This is a fully serverless backend project built on AWS.
+This is a fully **serverless backend project** built on **AWS Console** to support  .
+## About
 It powers a simple e-commerce workflow — listing products, fetching a product by ID, and placing an order with email confirmation.
 
 I created this project using the AWS Console (no frameworks), and later organized it into a clean folder structure for GitHub.
+
+
 
  ## Features
  ### 1. Get All Products
@@ -26,10 +29,9 @@ SES	Sending order confirmation emails
 IAM	Secure permissions for Lambda functions
 
 ## 📁 Project Structure (Manually Organized for GitHub)
-project/
-│
-├── lambda/
-│   ├── getProducts.py
+- project/
+ - lambda/
+    - getProducts.py
 │   ├── getProductById.py
 │   └── createOrder.py
 │
@@ -81,7 +83,7 @@ POST	/order	CreateOrder
 Full details are included inside:
  api/gateway-routes.md
 
-Testing the APIs
+## Testing the APIs
 
 You can test the API using:
 
