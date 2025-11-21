@@ -43,9 +43,8 @@ Creates a new order entry in DynamoDB (Orders table)
 ├── lambda/
     ├── getProducts.py
 │   ├── getProductById.py
-
 │   └── createOrder.py
-
+│
 │
 ├── dynamodb/
 │   ├── products-table-structure.json
@@ -57,16 +56,7 @@ Creates a new order entry in DynamoDB (Orders table)
 │
 └── README.md
 ```
-/serverless-ecommerce-backend
- ┣ /src
- ┃ ┣ /functions          # Lambda handlers (API entry points)
- ┃ ┣ /services           # Business logic / core modules
- ┃ ┣ /models             # DynamoDB CRUD operations
- ┃ ┣ /utils              # Helpers, validation, authentication utils
- ┣ /config               # Environment & configuration files (if any)
- ┣ requirements.txt      # Python dependencies
- ┣ serverless.yml / template.yaml   # Deployment configuration (IaC)
- ┗ README.md             # Documentation
+---
 
 
  ## DynamoDB Tables
@@ -99,10 +89,15 @@ Returns order_id in response
 
 Your routes may look like this:
 
-Method	Endpoint	Lambda
-GET	/products	getProducts
-GET	/products/{id}	getProductById
-POST	/order	CreateOrder
+## 🔗 API Endpoints
+
+| Method | Endpoint | Lambda Function |
+|--------|----------|------------------|
+| GET | /products | getProducts |
+| GET | /products/{id} | getProductById |
+| POST | /order | CreateOrder |
+```
+
 
 Full details are included inside:
  api/gateway-routes.md
