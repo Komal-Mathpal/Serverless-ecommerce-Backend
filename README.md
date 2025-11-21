@@ -42,7 +42,9 @@ Creates a new order entry in DynamoDB (Orders table)
  - lambda/
     - getProducts.py
 │   ├── getProductById.py
+
 │   └── createOrder.py
+
 │
 ├── dynamodb/
 │   ├── products-table-structure.json
