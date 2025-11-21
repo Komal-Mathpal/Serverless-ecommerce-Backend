@@ -6,7 +6,7 @@ This backend uses **Lambda (Python), API Gateway, DynamoDB, and Cognito** to del
 ---
 
 ## 📍 About the Project
-The project delivers essential e-commerce backend features including **user authentication, product management, cart operations, and orders** — all powered by fully serverless infrastructure.
+The project delivers essential e-commerce backend features including **user authentication, product management, and orders** — all powered by fully serverless infrastructure.
 
 Because the architecture runs on AWS Lambda and API Gateway, it **automatically handles traffic spikes and load balancing without any manual server management**, ensuring smooth performance during high user activity.  
 This significantly enhances **traffic control, scalability, and application reliability**.
@@ -53,6 +53,17 @@ Creates a new order entry in DynamoDB (Orders table)
 │   └── example-requests.md
 │
 └── README.md
+/serverless-ecommerce-backend
+ ┣ /src
+ ┃ ┣ /functions          # Lambda handlers (API entry points)
+ ┃ ┣ /services           # Business logic / core modules
+ ┃ ┣ /models             # DynamoDB CRUD operations
+ ┃ ┣ /utils              # Helpers, validation, authentication utils
+ ┣ /config               # Environment & configuration files (if any)
+ ┣ requirements.txt      # Python dependencies
+ ┣ serverless.yml / template.yaml   # Deployment configuration (IaC)
+ ┗ README.md             # Documentation
+
 
  ## DynamoDB Tables
  ### Products Table
