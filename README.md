@@ -122,9 +122,7 @@ You can test the API using:
 
 **Browser**
 
-Works for:
-GET /products
-GET /products/{id}
+Works for:**GET /products** and **GET /products/{id}**
 
 
 ### Example:
