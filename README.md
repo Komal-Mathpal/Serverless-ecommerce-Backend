@@ -121,7 +121,7 @@ GET /products/{id}
 
  AWS CLI
 
-Example:
+## Example:
 
 aws lambda invoke \
   --function-name CreateOrder \
