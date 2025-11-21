@@ -140,19 +140,19 @@ aws lambda invoke \
 
 This backend is serverless — no installation needed on the user's computer.
 
-To run it:
+### To run it:
 
-Deploy code to Lambda (upload .zip or inline)
+* Deploy code to Lambda (upload .zip or inline)
 
-Configure API Gateway routes
+* Configure API Gateway routes
 
-Connect DynamoDB tables
+* Connect DynamoDB tables
 
-Verify emails in SES
+* Verify emails in SES
 
-Test using Postman or browser
+* Test using Postman or browser
 
-No local server or environment required.
+* No local server or environment required.
 
 ---
 
