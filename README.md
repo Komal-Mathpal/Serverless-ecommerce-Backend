@@ -168,15 +168,15 @@ This backend is serverless — no installation needed on the user's computer.
 
  ## Improvements (Optional)
 
-Add authentication using Cognito
+* Add authentication using Cognito
 
-Add pagination for product list
+* Add pagination for product list
 
-Add status tracking for orders
+* Add status tracking for orders
 
-Build a frontend (React, Next.js or simple HTML)
+* Build a frontend (React, Next.js or simple HTML)
 
-Implement IaC (CloudFormation / SAM / Terraform)
+* Implement IaC (CloudFormation / SAM / Terraform)
 
 ---
 
@@ -184,4 +184,4 @@ Implement IaC (CloudFormation / SAM / Terraform)
 
 This repository is structured to make the project understandable, readable, and recruiter-friendly — even though the entire backend was originally built using the AWS Console.
 
-The folder structure simply documents and organizes the system, which is absolutely professional and commonly done for cloud engineers.
+The folder structure simply documents and organizes the system, which is absolutely professional. 
