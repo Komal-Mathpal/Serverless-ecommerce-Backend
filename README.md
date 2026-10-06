@@ -1,15 +1,15 @@
 # 🛒 Serverless E-Commerce Backend (AWS)
 
-A scalable **serverless backend** built using AWS to support modern e-commerce applications.  
-This backend uses **Lambda (Python), API Gateway, DynamoDB, and Cognito** to deliver a secure, cost-efficient, and highly scalable cloud architecture.
+A scalable serverless backend built using AWS to support modern e-commerce applications.  
+This backend uses Lambda (Python), API Gateway, DynamoDB, and Cognito to deliver a secure, cost-efficient, and highly scalable cloud architecture.
 
 ---
 
 ## 📍 About the Project
 The project delivers essential e-commerce backend features including **user authentication, product management, and orders** — all powered by fully serverless infrastructure.
 
-Because the architecture runs on AWS Lambda and API Gateway, it **automatically handles traffic spikes and load balancing without any manual server management**, ensuring smooth performance during high user activity.  
-This significantly enhances **traffic control, scalability, and application reliability**.
+Because the architecture runs on AWS Lambda and API Gateway, it automatically handles traffic spikes and load balancing without any manual server management, ensuring smooth performance during high user activity.  
+This significantly enhances traffic control, scalability, and application reliability.
 
 ---
  ## Features
